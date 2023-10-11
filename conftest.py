@@ -29,14 +29,14 @@ def test_my_pets():
       EC.presence_of_element_located((By.ID, 'email')))
 
    # Вводим email
-   pytest.driver.find_element(By.ID, 'email').send_keys('strax1003@gmail.com')
+   pytest.driver.find_element(By.ID, 'email').send_keys('ххххх3@gmail.com')
 
    # Установка явного ожидания
    element = WebDriverWait(pytest.driver, 10).until(
       EC.presence_of_element_located((By.ID, 'pass')))
 
    # Вводим пароль
-   pytest.driver.find_element(By.ID, 'pass').send_keys('7jfezyzKq6Jxj')
+   pytest.driver.find_element(By.ID, 'pass').send_keys('7jfezyzKq6эжлJxj')
 
    # Установка явного ожидания
    element = WebDriverWait(pytest.driver, 10).until(
